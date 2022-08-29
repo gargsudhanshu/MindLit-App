@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1071788861059",
+    "firebase_url": "https://litapp-f572d-default-rtdb.firebaseio.com",
+    "project_id": "litapp-f572d",
+    "storage_bucket": "litapp-f572d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071788861059:android:436b1c72250c3a1162ddb6",
+        "android_client_info": {
+          "package_name": "com.vatsa.litapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071788861059-95pi676k8hddka2nvgc9706mtmvp13pb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vatsa.litapp",
+            "certificate_hash": "dc4bc4a3b304cbe4d58d572091aef8a83dce0b17"
+          }
+        },
+        {
+          "client_id": "1071788861059-peapelhsfoa8r036he7gsbolfhvf4pk5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-AV3wlZY3wzcWLeQeI7_xlFha9SmZGqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071788861059-peapelhsfoa8r036he7gsbolfhvf4pk5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

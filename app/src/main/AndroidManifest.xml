@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.vatsa.litapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<!--    <uses-permission android:name="android.permission.CAMERA" />-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.vatsa.litapp.Activity.ForgotPassActivity"></activity>
+        <activity android:name="com.vatsa.litapp.Activity.SplashActivity" />
+        <activity android:name="com.vatsa.litapp.Activity.AboutActivity" />
+        <activity android:name="com.vatsa.litapp.Quiz.FinishQuizActivity" />
+        <activity
+            android:name="com.vatsa.litapp.Quiz.QuizActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyTheme" />
+        <activity
+            android:name="com.vatsa.litapp.Quiz.HomeQuizActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vatsa.litapp.Activity.IntroActivity"
+            android:exported="true"
+            android:theme="@style/MyTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.vatsa.litapp.Activity.StoryActivity" />
+        <activity android:name="com.vatsa.litapp.Activity.OptionsActivity" />
+        <activity android:name="com.vatsa.litapp.Activity.FollowersActivity" />
+        <activity android:name="com.vatsa.litapp.Activity.EditProfileActivity" />
+        <activity android:name="com.vatsa.litapp.Activity.CommentsActivity" />
+        <activity android:name="com.vatsa.litapp.Activity.AddStoryActivity" />
+        <activity android:name="com.vatsa.litapp.Activity.PostActivity" />
+        <activity
+            android:name="com.vatsa.litapp.Activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.vatsa.litapp.Activity.RegisterActivity" />
+        <activity
+            android:name="com.vatsa.litapp.Activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vatsa.litapp.Activity.StartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name=".Activity.CfActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

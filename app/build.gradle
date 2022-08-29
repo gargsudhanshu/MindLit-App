@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "com.vatsa.litapp"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'androidx.activity:activity:1.4.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+
+    implementation platform('com.google.firebase:firebase-bom:29.0.0')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-storage'
+    implementation 'com.google.firebase:firebase-core:'
+    //circle imageview
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    // image crop
+    implementation 'com.github.CanHub:Android-Image-Cropper:4.0.0'
+    // glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    //material edit text
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    //story progress
+    implementation 'com.github.shts:StoriesProgressView:3.0.0'
+    //swipe
+    implementation 'com.github.pwittchen:swipe-rx2:0.3.0'
+    //intro screen
+    implementation 'com.ramotion.paperonboarding:paper-onboarding:1.1.1'
+    // splash
+    implementation 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
+    // text
+    implementation 'at.blogc:expandabletextview:1.0.5'
+    //image
+    implementation 'com.github.metagalactic:ScalableImageView:0.0.6'
+
+    implementation 'androidx.core:core:1.7.0'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'
